@@ -3,10 +3,11 @@ package com.enterops.viraj;
 import java.util.HashMap;
 import java.util.Map;
 
+//Day 1 (19/05/2023)
 //Pascal Triangle example using memoization
 
 public class Memoization {
-    private static Map<Integer, Map<Integer, Integer>> cache = new HashMap<>();
+    private static Map<Integer, Map<Integer, Integer>> cache = new HashMap<>(); // Used HashMap(key-value pair)
 
     public static void calculatePascalTriangle(int totalRows) {
         for (int i = 0; i < totalRows; i++) {
