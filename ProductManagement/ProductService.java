@@ -69,7 +69,7 @@ public class ProductService {
         return products.stream().filter(product -> product.getWarranty() < year);
     }
     
-    public Stream<Product> searchByPlaceUsingStreams(String place){
+    public Stream<Product> searchProductByPlaceStream(String place){
         return products.stream().filter(product -> product.getPlace().contains(place));
     }
             
