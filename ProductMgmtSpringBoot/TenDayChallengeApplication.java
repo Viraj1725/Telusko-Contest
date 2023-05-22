@@ -21,7 +21,15 @@ public class TenDayChallengeApplication {
 	      for(Product p : prods){
 	          System.out.println(p);
 	      }
-		
+	      
+	        List<Product> place = service.searchProductsByPlace("Shelf");
+	        for(Product product : place){
+	            System.out.println(product);
+	        }
+	        
+	        List<Product> warrenty = service.searchProductsOutOfWarranty(2022);
+	        for(Product product : warrenty){
+	            System.out.println(product);
+	        }
 	}
-
 }
